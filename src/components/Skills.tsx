@@ -31,7 +31,7 @@ export function Skills() {
         { name: "Javascript",iconLink:"/assets/javascript.svg"},
         { name: "Typescript",iconLink:"/assets/typescript-icon.svg"},
         { name: "Python",iconLink:"/assets/python.svg"},
-        { name: "MySQL",iconLink:"/assets/mysql-icon.svg"}
+        { name: "SQL",iconLink:"/assets/mysql-icon.svg"}
         
       ]
     },
@@ -45,8 +45,8 @@ export function Skills() {
             {name:"Pandas",iconLink:"/assets/pandas-icon.svg"},
             {name:"Numpy",iconLink:"/assets/numpy.svg"},
             {name:"React",iconLink:"/assets/react.svg"},
-            {name:"VueJS",iconLink:"assets/vue.svg"},
-            {name:"PyTorch",iconLink:"pytorch-icon.svg"}
+            {name:"VueJS",iconLink:"/assets/vue.svg"},
+            {name:"PyTorch",iconLink:"/assets/pytorch-icon.svg"}
         ]
     }
     // You can add more categories and items here

@@ -5,6 +5,7 @@ import {CheckIcon} from '@chakra-ui/icons'
 interface CompanyDescription{
     companyName: string,
     title: string,
+    length: string
     description: string[]
 }
 export function Experience(){
@@ -12,6 +13,7 @@ export function Experience(){
         {
             companyName:"Coles",
             title: "Software Architect Intern",
+            length: "July 2023 - December 2023",
             description: [`
             Worked as a architecture and strategy intern focusing on
             improving governance processes and identifying key areas of
@@ -53,6 +55,13 @@ export function Experience(){
                             </Heading>
                             <Text pt='2' fontSize='sm'>
                                 {Experiences[experienceIdx].title}
+                            </Text>
+                        </Box>
+                        <Box>
+                            <Heading size='xs' textTransform='uppercase'>Length
+                            </Heading>
+                            <Text pt='2' fontSize='sm'>
+                                {Experiences[experienceIdx].length}
                             </Text>
                         </Box>
                         <Box>

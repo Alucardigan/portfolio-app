@@ -23,28 +23,34 @@ function App() {
           return (
             <ReactFullpage.Wrapper>
               <ChakraProvider>
-              <div className="section">
-                <About/>
-                <Button width={"100%"} onClick={()=> fullpageApi.moveSectionDown() }>Next</Button>
-              </div>
-              <div className="section">
-                <Box minHeight="100vh" p={4}>
-                  <Projects/>
-                  <Button width={"100%"} onClick={()=> fullpageApi.moveSectionDown()} position={"absolute"} bottom={0}>Next</Button>
-                </Box>
-              </div>
-              <div className="section">
-                <Box minHeight="100vh" p={4}>
-                  <Experience/>
-                  <Button width={"100%"} onClick={()=> fullpageApi.moveSectionDown()} position={"absolute"} bottom={0}>Next</Button>
-                </Box>
-              </div>
-              <div className="section">
-                <Box minHeight="100vh" p={4}>
-                  <Skills/>
-                  <Button width={"100%"} onClick={()=> fullpageApi.moveSectionDown()} position={"absolute"} bottom={0}>Next</Button>
-                </Box>
-              </div>
+                
+                <div className="section">
+                  <NavBar fullpageApi={fullpageApi}/>
+                  <About/>
+                  <Button width={"100%"} onClick={()=> fullpageApi.moveSectionDown() }>Next</Button>
+                </div>
+                <div className="section">
+                  <NavBar fullpageApi={fullpageApi}/>
+                  <Box minHeight="100vh" p={4}>
+                    <Experience/>
+                    <Button width={"100%"} onClick={()=> fullpageApi.moveSectionDown()} position={"absolute"} bottom={0}>Next</Button>
+                  </Box>
+                </div>
+                <div className="section">
+                  <NavBar fullpageApi={fullpageApi}/>
+                  <Box minHeight="100vh" p={4}>
+                    <Projects/>
+                    <Button width={"100%"} onClick={()=> fullpageApi.moveSectionDown()} position={"absolute"} bottom={0}>Next</Button>
+                  </Box>
+                </div>
+                <div className="section">
+                  <NavBar fullpageApi={fullpageApi}/>
+                  <Box minHeight="100vh" p={4}>
+                    <Skills/>
+                    
+                  </Box>
+                </div>
+                
               </ChakraProvider>
             </ReactFullpage.Wrapper>
           );
